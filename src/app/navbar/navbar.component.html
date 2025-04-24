@@ -1,14 +1,40 @@
-<div class="flex bg-blue-500 justify-between items-center">
-    <div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIC8Du6-wzYzVpcybF1tf6LFVwAZnN7hPatA&s" width="100px" alt="">
+<nav class="bg-blue-600 text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIC8Du6-wzYzVpcybF1tf6LFVwAZnN7hPatA&s"
+          alt="Logo"
+          class="w-32"
+        />
+      </div>
+  
+      <!-- Menú -->
+      <ul class="flex gap-6 items-center text-base font-medium">
+        <li>
+          <a
+            class="transition-colors duration-200 hover:text-yellow-300 cursor-pointer"
+            (click)="navegar('login')"
+            >Login</a
+          >
+        </li>
+        <li>
+          <a
+            class="transition-colors duration-200 hover:text-yellow-300 cursor-pointer"
+            (click)="navegar('profesores')"
+            >Panel</a
+          >
+        </li>
+        <li>
+          <a class="transition-colors duration-200 hover:text-yellow-300 cursor-pointer"
+            >Elemento 3</a
+          >
+        </li>
+        <li>
+          <a class="transition-colors duration-200 hover:text-yellow-300 cursor-pointer"
+            >Elemento 4</a
+          >
+        </li>
+      </ul>
     </div>
-
-    <div>
-        <ul class="flex gap-4">
-            <li><a class="hover:cursor-pointer" (click)="navegar('login')">Login</a></li>
-            <li><a class="hover:cursor-pointer" (click)="navegar('profesores')">profesores</a></li>
-            <li>element3</li>
-            <li>element4</li>
-        </ul>
-    </div>
-</div>
+  </nav>
